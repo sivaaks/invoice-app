@@ -1,1 +1,1 @@
-# Diary manager Frontend deployed URL : https://siva-diary-manager.netlify.app
+# Deployed URL : https://siva-invoice-app.netlify.app/
