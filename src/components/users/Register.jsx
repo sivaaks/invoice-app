@@ -38,14 +38,14 @@ export default function Register(){
          <Container maxWidth="sm">
             <Stack spacing={2} sx={{mt:3}} direction="column" alignItems="center">
                 <Typography variant="h4" sx={{mt:5}}>Sign up</Typography>
-                <TextField fullWidth onChange={handleChange} value={userDetails.name} required type="text" variant="outlined" name="name" label="Name"></TextField>
-                <TextField fullWidth onChange={handleChange} value={userDetails.email} required type="email" variant="outlined" name="email" label="Email"></TextField>
-                <TextField fullWidth onChange={handleChange} value={userDetails.phone} type="phone" variant="outlined" name="phone" label="Phone"></TextField>
-                <TextField fullWidth onChange={handleChange} value={userDetails.password} required type="password" variant="outlined" name="password" label="Password"></TextField>
+                <TextField fullWidth onChange={handleChange} value={userDetails.name} required type="text" variant="filled" name="name" label="Name"></TextField>
+                <TextField fullWidth onChange={handleChange} value={userDetails.email} required type="email" variant="filled" name="email" label="Email"></TextField>
+                <TextField fullWidth onChange={handleChange} value={userDetails.phone} type="phone" variant="filled" name="phone" label="Phone"></TextField>
+                <TextField fullWidth onChange={handleChange} value={userDetails.password} required type="password" variant="filled" name="password" label="Password"></TextField>
             </Stack>
             <Stack spacing={2} sx={{mt:3}} alignItems="flex-start">
             {/*<FormControlLabel control={<Checkbox id="terms"/>} label="I agree to terms and conditions"></FormControlLabel>*/}
-            <LoadingButton loadingPosition="end" loading={loading} onClick={()=>registerUser()} fullWidth variant="contained" size="large" sx={{padding:1.5}}>Sign up</LoadingButton>
+            <LoadingButton loadingPosition="end" loading={loading} onClick={()=>registerUser()} fullWidth variant="outlined" size="large" sx={{padding:1.5}}>Sign up</LoadingButton>
             </Stack>
             <Stack sx={{mt:2}} direction="row" justifyContent="space-between" spacing={12}>
             <Link onClick={()=>history.push('/login')} variant="body2" color="primary" sx={{cursor:'pointer'}}>Already have an account? Login here</Link>

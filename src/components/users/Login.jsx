@@ -44,13 +44,13 @@ export default function Login(){
 
     return(
         <>
-        <Container maxWidth="sm">
+        <Container maxWidth="sm" sx={{backgroundColor:'#faf5e8',paddingBottom:5,mt:5}}>
             <Stack spacing={2} sx={{mt:3}} direction="column" alignItems="center">
                 <Typography variant="h2" sx={{mt:5}}>Invoice app</Typography>
                 <Typography variant="h4" sx={{mt:5}}>Login</Typography>
-                <TextField fullWidth value={userCredentials.email} onChange={handleChange} type="email" variant="outlined" name="email" label="Email address" required></TextField>
-                <TextField fullWidth value={userCredentials.password} onChange={handleChange} type="password" variant="outlined" name="password" label="Password" required></TextField>
-                <LoadingButton loading={loading} loadingPosition="end" endIcon={<ArrowForward/>} fullWidth variant="contained" onClick={login} sx={{padding:1.5}}>Login</LoadingButton>
+                <TextField fullWidth value={userCredentials.email} onChange={handleChange} type="email" variant="filled" name="email" label="Email address" required></TextField>
+                <TextField fullWidth value={userCredentials.password} onChange={handleChange} type="password" variant="filled" name="password" label="Password" required></TextField>
+                <LoadingButton loading={loading} loadingPosition="end" endIcon={<ArrowForward/>} fullWidth variant="outlined" onClick={login} sx={{padding:1.5}}>Login</LoadingButton>
             </Stack>
             <Stack sx={{mt:3}} direction="row" justifyContent="space-between">
                 <Link onClick={()=>history.push('/register')} variant="body2" sx={{cursor:'pointer'}}>Don't have an account? Register here</Link>

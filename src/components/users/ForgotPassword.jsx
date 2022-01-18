@@ -38,8 +38,8 @@ export default function ForgotPassword(){
         <Container maxWidth="sm">
             <Stack spacing={2} sx={{mt:3}} alignItems="center">
                 <Typography variant="h4" sx={{mt:5}}>Forgot password</Typography>
-                <TextField required onChange={handleChange} fullWidth variant="outlined" name="email" type="email" label="Email address"></TextField>
-                <LoadingButton loading={loading} fullWidth onClick={forgotPassword} variant="contained" sx={{padding:1.5}}>Reset password</LoadingButton>
+                <TextField required onChange={handleChange} fullWidth variant="filled" name="email" type="email" label="Email address"></TextField>
+                <LoadingButton loading={loading} fullWidth onClick={forgotPassword} variant="outlined" sx={{padding:1.5}}>Reset password</LoadingButton>
                 {/* <Link sx={{cursor:'pointer'}} onClick={()=>forgotPassword()} variant="body2">Resend password reset link</Link> */}
                 <Link sx={{cursor:'pointer'}} onClick={()=>history.push('/login')} variant="body2">Go back to login</Link>
             </Stack>
