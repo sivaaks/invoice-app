@@ -1,27 +1,30 @@
 
-const API_LOGIN='http://localhost:3001/users/login';
-const API_REGISTER='http://localhost:3001/users/register';
-const API_FORGOT_PASSWORD='http://localhost:3001/users/forgot-password';
-const API_AUTH='http://localhost:3001/users/check-auth';
-const API_EVENTS='http://localhost:3001/events';
-const API_CUSTOMERS='http://localhost:3001/customers';
-const API_DAY_PLANNER='http://localhost:3001/day-planner';
-const API_PERSONAL_DIARY='http://localhost:3001/personal-diary';
-const API_INFO='http://localhost:3001/info';
-const API_CONTACTS='http://localhost:3001/customers';
-const API_PRODUCTS='http://localhost:3001/products';
-const API_INVOICES='http://localhost:3001/invoices';
+// const API_LOGIN='http://localhost:3001/users/login';
+// const API_REGISTER='http://localhost:3001/users/register';
+// const API_FORGOT_PASSWORD='http://localhost:3001/users/forgot-password';
+// const API_AUTH='http://localhost:3001/users/check-auth';
+// const API_EVENTS='http://localhost:3001/events';
+// const API_CUSTOMERS='http://localhost:3001/customers';
+// const API_DAY_PLANNER='http://localhost:3001/day-planner';
+// const API_PERSONAL_DIARY='http://localhost:3001/personal-diary';
+// const API_INFO='http://localhost:3001/info';
+// const API_CONTACTS='http://localhost:3001/customers';
+// const API_PRODUCTS='http://localhost:3001/products';
+// const API_INVOICES='http://localhost:3001/invoices';
 
+const API_LOGIN='https://siva-invoice-app.herokuapp.com/users/login';
+const API_REGISTER='https://siva-invoice-app.herokuapp.com/users/register';
+const API_FORGOT_PASSWORD='https://siva-invoice-app.herokuapp.com/users/forgot-password';
+const API_AUTH='https://siva-invoice-app.herokuapp.com/users/check-auth';
+const API_EVENTS='https://siva-invoice-app.herokuapp.com/events';
+const API_CUSTOMERS='https://siva-invoice-app.herokuapp.com/customers';
+const API_DAY_PLANNER='https://siva-invoice-app.herokuapp.com/day-planner';
+const API_PERSONAL_DIARY='https://siva-invoice-app.herokuapp.com/personal-diary';
+const API_INFO='https://siva-invoice-app.herokuapp.com/info';
+const API_CONTACTS='https://siva-invoice-app.herokuapp.com/customers';
+const API_PRODUCTS='https://siva-invoice-app.herokuapp.com/products';
+const API_INVOICES='https://siva-invoice-app.herokuapp.com/invoices';
 
-// const API_LOGIN='https://diary-manager-backend.herokuapp.com/users/login';
-// const API_REGISTER='https://diary-manager-backend.herokuapp.com/users/register';
-// const API_FORGOT_PASSWORD='https://diary-manager-backend.herokuapp.com/users/forgot-password';
-// const API_AUTH='https://diary-manager-backend.herokuapp.com/users/check-auth';
-// const API_EVENTS='https://diary-manager-backend.herokuapp.com/events';
-// const API_CONTACTS='https://diary-manager-backend.herokuapp.com/contacts';
-// const API_DAY_PLANNER='https://diary-manager-backend.herokuapp.com/day-planner';
-// const API_PERSONAL_DIARY='https://diary-manager-backend.herokuapp.com/personal-diary';
-// const API_INFO='https://diary-manager-backend.herokuapp.com/info';
 
 const convertTimeTo12H=(time)=>{
     const tempTime= parseTime(time);
